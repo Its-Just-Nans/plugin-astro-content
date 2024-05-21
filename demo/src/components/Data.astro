@@ -1,0 +1,26 @@
+---
+import ShowResult from "./ShowResult.astro";
+import { ContentLoader, ContentLoaderRuntime } from "../../../plugin-astro-content";
+
+const ContentLoaderValue = ContentLoader("../*");
+
+const astroGlob = await Astro.glob("../*");
+
+const viteGlob = await import.meta.glob("../*");
+
+const dynamic = "../*";
+
+const ContentLoaderRuntimeValue = await ContentLoaderRuntime(dynamic);
+
+const ContentLoaderRuntimeValueWithOptions = await ContentLoaderRuntime(dynamic, { objectMode: true });
+---
+
+<ShowResult data={{ ContentLoaderValue }} />
+
+<ShowResult data={{ astroGlob }} />
+
+<ShowResult data={{ viteGlob }} />
+
+<ShowResult data={{ ContentLoaderRuntimeValue }} />
+
+<ShowResult data={{ ContentLoaderRuntimeValueWithOptions }} />

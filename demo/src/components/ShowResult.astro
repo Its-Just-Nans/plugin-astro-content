@@ -1,0 +1,15 @@
+---
+interface Props {
+    data: any;
+}
+
+const { data } = Astro.props;
+
+const key = Object.keys(data)[0];
+---
+
+<div>
+    <p>{key}</p>
+    <pre>{JSON.stringify(data[key] , null, 4)}</pre>
+</div>
+<br />

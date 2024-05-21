@@ -1,0 +1,24 @@
+{
+    "name": "plugin-astro-content",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "keywords": [
+        "astro",
+        "astrojs",
+        "content",
+        "glob"
+    ],
+    "author": "n4n5",
+    "homepage": "https://github.com/Its-Just-Nans/plugin-astro-content",
+    "bugs": "https://github.com/Its-Just-Nans/plugin-astro-content/issues",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Its-Just-Nans/plugin-astro-content.git"
+    },
+    "license": "MIT",
+    "type": "module",
+    "dependencies": {
+        "fast-glob": "^3.3.2"
+    }
+}
