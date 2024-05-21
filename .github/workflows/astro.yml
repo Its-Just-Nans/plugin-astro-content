@@ -35,7 +35,8 @@ jobs:
             - name: Use Node.js
               uses: actions/setup-node@v4
             - name: npm install
-              run: cd demo && npm ci --force
+              run: |
+                  cd demo && npm ci --force && cd ../plugin-astro-content && npm ci --force
             - name: building
               run: cd demo && npm run build
             - name: Upload artifact

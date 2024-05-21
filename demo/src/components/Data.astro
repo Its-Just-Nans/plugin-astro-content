@@ -6,7 +6,7 @@ const ContentLoaderValue = ContentLoader("../*");
 
 const astroGlob = await Astro.glob("../*");
 
-const viteGlob = await import.meta.glob("../*");
+const viteGlob = import.meta.glob("../*");
 
 const dynamic = "../*";
 
