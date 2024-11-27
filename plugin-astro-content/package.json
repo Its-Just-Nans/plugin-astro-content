@@ -1,6 +1,6 @@
 {
     "name": "plugin-astro-content",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "plugin-astro-content",
     "main": "index.js",
     "keywords": [
@@ -16,6 +16,10 @@
         "type": "git",
         "url": "git+https://github.com/Its-Just-Nans/plugin-astro-content.git"
     },
+    "types": "types/",
+    "files": [
+        "*"
+    ],
     "license": "MIT",
     "type": "module",
     "dependencies": {
