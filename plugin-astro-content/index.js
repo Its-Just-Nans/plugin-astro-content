@@ -21,7 +21,7 @@ const solveGlob = async (glob, options = {}) => {
     return res;
 };
 
-const pluginContent = (pluginOptions) => {
+const pluginContent = (pluginOptions = {}) => {
     return {
         name,
         enforce: "pre",
@@ -54,7 +54,7 @@ export const ContentLoader = (...args) => {
     throw new Error("ContentLoader should be replaced by vite or use ContentLoaderRuntime");
 };
 
-export const ContentLoaderRuntime = (path, options) => {
+export const ContentLoaderRuntime = (path, options = {}) => {
     if (import.meta?.env?.DEV) {
         console.log("ContentLoaderRuntime", path);
     }
