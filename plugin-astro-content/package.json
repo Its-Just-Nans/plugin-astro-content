@@ -1,6 +1,6 @@
 {
     "name": "plugin-astro-content",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "plugin-astro-content is an Astro.glob() alternative #withastro",
     "main": "index.js",
     "keywords": [
