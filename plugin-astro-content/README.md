@@ -29,7 +29,7 @@ Then in your astro file:
 
 ```astro
 ---
-import { ContentLoader, ContentLoaderRuntime } from "plugin-astro-content";
+import { ContentLoader } from "plugin-astro-content";
 
 const ContentLoaderValue = ContentLoader("../*"); // act mostly like import.meta.glob("../*")
 ---
