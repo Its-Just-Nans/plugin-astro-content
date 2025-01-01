@@ -1,9 +1,11 @@
 {
     "name": "plugin-astro-content",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "plugin-astro-content is an Astro.glob() alternative #withastro",
     "main": "index.js",
     "keywords": [
+        "astro-component",
+        "withastro",
         "astro",
         "astrojs",
         "content",
