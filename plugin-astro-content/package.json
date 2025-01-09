@@ -1,6 +1,6 @@
 {
     "name": "plugin-astro-content",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "plugin-astro-content is an Astro.glob() alternative #withastro",
     "main": "index.js",
     "keywords": [
@@ -25,6 +25,6 @@
     "license": "MIT",
     "type": "module",
     "dependencies": {
-        "fast-glob": "^3.3.2"
+        "fast-glob": "3.3.3"
     }
 }
