@@ -15,9 +15,6 @@ const solveGlob = async (glob, options = {}) => {
     const correctPath = resolve(glob);
     const currentOptions = { ...defaultOptions, ...options };
     const res = await fg(correctPath, currentOptions);
-    if (import.meta?.env?.DEV) {
-        console.log(`${name} globbing: '${glob}', found ${res.length} results`);
-    }
     return res;
 };
 
@@ -48,15 +45,11 @@ const pluginContent = (pluginOptions = {}) => {
 export default pluginContent;
 
 export const ContentLoader = (...args) => {
-    if (import.meta?.env?.DEV) {
-        console.log("ContentLoader", args);
-    }
-    throw new Error("ContentLoader should be replaced by vite or use ContentLoaderRuntime");
+    throw new Error(
+        "ContentLoader should be replaced by vite (did you add plugin-astro-content in the config ?) or use ContentLoaderRuntime"
+    );
 };
 
 export const ContentLoaderRuntime = (path, options = {}) => {
-    if (import.meta?.env?.DEV) {
-        console.log("ContentLoaderRuntime", path);
-    }
     return solveGlob(path, options);
 };
